@@ -69,6 +69,9 @@ apiKeys:
   # -- list of API Keys to load and use with supertokens-core
   keys: []
 
+service:
+  type: ClusterIP
+  port: 3567
 
 serviceAccount:
   # -- Specifies whether a service account should be created
