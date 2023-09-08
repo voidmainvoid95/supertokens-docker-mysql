@@ -59,7 +59,7 @@ spec:
             - name: "REFRESH_TOKEN_VALIDITY"
               value: "{{ .Values.refreshTokenValidity }}"
             - name: "PASSWORD_RESET_TOKEN_LIFETIME"
-              value: "{{ .Values.passwordResetTokenLifetime }}""
+              value: "{{ .Values.passwordResetTokenLifetime }}"
             - name: "EMAIL_VERIFICATION_TOKEN_LIFETIME"
               value: "{{ .Values.emailVerificationTokenLifetime }}"
             - name: "PASSWORDLESS_MAX_CODE_INPUT_ATTEMPTS"
