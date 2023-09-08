@@ -51,9 +51,9 @@ spec:
             - name: "ACCESS_TOKEN_VALIDITY"
               value: "{{ .Values.accessTokenValidity }}"
             - name: "ACCESS_TOKEN_BLACKLISTING"
-              value: {{ .Values.accessTokenBlacklisting }}
+              value: "{{ .Values.accessTokenBlacklisting }}"
             - name: "ACCESS_TOKEN_SIGNING_KEY_DYNAMIC"
-              value: {{ .Values.accessTokenSigningKeyDynamic }}
+              value: "{{ .Values.accessTokenSigningKeyDynamic }}"
             - name: "ACCESS_TOKEN_SIGNING_KEY_UPDATE_INTERVAL"
               value: "{{ .Values.accessTokenSigningKeyUpdateInterval }}"
             - name: "REFRESH_TOKEN_VALIDITY"
@@ -69,7 +69,7 @@ spec:
             - name: "BASE_PATH"
               value: {{ .Values.basePath }}
             - name: "DISABLE_TELEMETRY"
-              value: {{ .Values.disableTelemetry }}
+              value: "{{ .Values.disableTelemetry }}"
             - name: "MAX_SERVER_POOL_SIZE"
               value: "{{ .Values.maxServerPoolSize }}"
             {{- if .Values.apiKeys.enabled }}
